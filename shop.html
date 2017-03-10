@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="utf-8">
+	<title>ООО ОКЕАН</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+	<link rel="shortcut icon" href="images/favicon.ico">
+    
+	<!-- CSS STYLES -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+	<link href="css/flexslider.css" rel="stylesheet" type="text/css" />
+	<link href="css/animate.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+    
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+    
+	<!-- SCRIPTS -->
+	<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <!--[if IE]><html class="ie" lang="en"> <![endif]-->
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+	<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="js/jquery.twitter.js" type="text/javascript"></script>
+	<script src="js/superfish.min.js" type="text/javascript"></script>
+	<script src="js/jquery.flexslider-min.js" type="text/javascript"></script>
+	<script src="js/animate.js" type="text/javascript"></script>
+	<script src="js/myscript.js" type="text/javascript"></script>
+	
+</head>
+<body>
+
+<!-- PRELOADER -->
+<img id="preloader" src="images/preloader.gif" alt="" />
+<!-- //PRELOADER -->
+	
+	<!-- PAGE -->
+	<div id="page">
+		
+		<!-- CONTAINER -->
+		<div class="container page_block">
+			
+			<!-- WRAPPER -->
+			<div class="wrapper">
+				
+				<!-- HEADER -->
+				<header>
+					
+					<!-- LOGO -->
+					<div class="logo">
+						<a href="index.html" alt=""><img src="images/logo.png" alt="" height="113" /></a>					</div>
+		      <!-- LOGO -->
+					
+					<!-- MENU -->
+					<div class="menu_block clearfix">
+						
+						<!-- RESPONSIVE BUTTON MENU -->
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="glyphicon glyphicon-align-justify"></span>
+							</button>
+						</div><!-- //RESPONSIVE BUTTON MENU -->
+						
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li class="first active"><a href="index.html" title="">ГЛАВНАЯ</a></li>
+								<li class="sub-menu"><a href="shop.html" title="">КАТАЛОГ ТОВАРОВ</a></li>
+								<li class="sub-menu"><a href="contacts.html" title="">КОНТАКТЫ</a></li>
+								<li class="sub-menu"><a href="about.html" title="">О ФИРМЕ</a>
+									<ul>
+										<li><a href="portfolio1.html"><span>-</span>ОФИС</a></li>
+										<li><a href="portfolio2.html"><span>-</span>ПАРТНЕРЫ</a></li>
+										<li><a href="portfolio3.html"><span>-</span>ВАКАНСИИ</a></li>
+									</ul>
+								</li>
+								<li class="sub-menu"><a href="shortcodes.html" title="">ПОКУПАТЕЛЮ</a></li>
+							</ul>
+						</div>
+					</div><!-- //MENU -->
+				</header><!-- //HEADER -->
+				
+				
+				<!-- BREADCRUMBS -->
+				<section class="full_width breadcrumbs_block clearfix">
+					<div class="breadcrumbs_content">
+						<h2 class="pull-left">ДОБРО ПОЖАЛОВАТЬ В НАШ МАГАЗИН</h2>
+						<ol class="pull-right breadcrumb">
+							<li><a href="index.html">На главную</a></li>
+							<li><a href="javascript:void(0);">Магазин</a></li>
+						</ol>
+					</div>
+					<div class="overlay"></div>
+					<div class="overlay_black"></div>
+				</section><!-- //BREADCRUMBS -->
+				
+				
+				<!-- Shop -->
+				<section class="shop">
+					<div class="row">
+						
+						<!-- Shop Products -->
+						<div class="col-lg-9 col-sm-9 padbot20">
+							
+							<div class="sorting_options clearfix">
+								<a class="btn-compare" href="javascript:void(0);" alt="">Сравнить</a>
+								<!-- filter_block -->
+								<div id="options" class="product_sort">
+									<div class="filter_btn"><span class="sorting_options_text">Сортировка по</span><span class="pull-right glyphicon glyphicon-chevron-down"></span><div class="clear"></div></div>
+									<ul id="filter" class="option-set" data-option-key="filter">
+										<li><a class="selected" href="#filter" data-option-value="*">По умолчанию</a></li>
+										<li><a class="" href="#filter" data-option-value=".category1">По популярности</a></li>
+										<li><a class="" href="#filter" data-option-value=".category2">Средния цена</a></li>
+									</ul>
+								</div>
+								<script>
+									$("#filter").hide();
+									$(".filter_btn, #filter li a").click(function() {
+										$("#filter").slideToggle("fast");
+									});
+								</script>
+								<!-- //filter_block -->
+								
+								<!-- Produc Size -->
+								<div id="toggle-sizes">
+									<a class="view_full" href="javascript:void(0);"><span class="glyphicon glyphicon-th-list"></span></a>
+									<a class="view_box" href="javascript:void(0);"><span class="glyphicon glyphicon-th-large"></span></a>
+								</div>
+								<!-- //Produc Size -->
+								
+								<!-- Pagination -->
+								<ul class="pull-right pagination">
+									<li><a href="#">&laquo;</a></li>
+									<li class="active"><a href="#">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">&raquo;</a></li>
+								</ul><!-- //Pagination -->
+								
+							</div>
+							
+							<div class="row shop_block">
+								<div class="element category1 col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12">
+									<div class="product_item center margbot30">
+										<div class="hover_img">
+											<img src="images/products/1.jpg" alt="" />
+										</div>
+										<div class="item_btn_in center">
+											<a class="btn btn-white" href="javascript:void(0);" alt="">В корзину</a>
+											<a class="btn btn-white" href="product-page.html" alt="">Открыть</a>
+										</div>
+										<div class="project_descr">
+											<h4><a href="product-page.html" alt="">Семга</a></h4>
+											<span class="price">200р</span>
+											<p> Семга (озерный лосось, атлантический лосось) – рыба с торпедообразным телом, сжатым с боков, зеленоватой спиной, серебристыми боками, белым брюхом и черными пятнышками Х-образной формы из рода Лососевых. Семга относится к проходным видам рыб, обитающим на севере Атлантического океана и заходящим на нерест в реки от Испании и Португалии до Урала. Эта рыба также встречается в озерах России, Норвегии, Швеции и Финляндии. </p>
+											<p>Вес и размер семги сильно варьирует в зависимости от среды, в которой они живут и степени взрослости. Живет атлантический лосось в среднем 5-6 лет (максимально 13) и может весить свыше 40 кг при длине около 1,5 м. В реках известны так называемые карликовые самцы, не выходящие в моря и достигающие веса всего в 1-1,5 кг.</p>
+										</div>
+									</div>
+								</div>
+								<div class="element category2 col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12">
+									<div class="product_item center margbot30">
+										<div class="hover_img">
+											<img src="images/products/2.jpg" alt="" />
+										</div>
+										<div class="item_btn_in center">
+											<a class="btn btn-white" href="javascript:void(0);" alt="">В корзину</a>
+											<a class="btn btn-white" href="product-page.html" alt="">Открыть</a>
+										</div>
+										<div class="project_descr">
+											<h4><a href="product-page.html" alt="">Камбала</a></h4>
+											<span class="price">150р</span>
+											<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi archi tecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit.</p>
+											<p>Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+										</div>
+									</div>
+								</div>
+								<div class="element category3 col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12">
+									<div class="product_item center margbot30">
+										<div class="hover_img">
+											<img src="images/products/3.jpg" alt="" />
+										</div>
+										<div class="item_btn_in center">
+											<a class="btn btn-white" href="javascript:void(0);" alt="">В корзину</a>
+											<a class="btn btn-white" href="product-page.html" alt="">Открыть</a>
+										</div>
+										<div class="project_descr">
+											<h4><a href="product-page.html" alt="">Рыба свежайшая</a></h4>
+											<span class="price">189р</span>
+											<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi archi tecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit.</p>
+											<p>Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+										</div>
+									</div>
+								</div>
+								<div class="element category4 col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12">
+									<div class="product_item center margbot30">
+										<div class="hover_img">
+											<img src="images/products/4.jpg" alt="" />
+										</div>
+										<div class="item_btn_in center">
+											<a class="btn btn-white" href="javascript:void(0);" alt="">В корзину</a>
+											<a class="btn btn-white" href="product-page.html" alt="">Открыть</a>
+										</div>
+										<div class="project_descr">
+											<h4><a href="product-page.html" alt="">Рыбина</a></h4>
+											<span class="price">150р</span>
+											<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi archi tecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit.</p>
+											<p>Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+										</div>
+									</div>
+								</div>
+								<div class="element category5 col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12">
+									<div class="product_item center margbot30">
+										<div class="hover_img">
+											<img src="images/products/5.jpg" alt="" />
+										</div>
+										<div class="item_btn_in center">
+											<a class="btn btn-white" href="javascript:void(0);" alt="">В корзину</a>
+											<a class="btn btn-white" href="product-page.html" alt="">Открыть</a>
+										</div>
+										<div class="project_descr">
+											<h4><a href="product-page.html" alt="">Красная огненная</a></h4>
+											<span class="price">500р</span>
+											<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi archi tecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit.</p>
+											<p>Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+										</div>
+									</div>
+								</div>
+								<div class="element category1 col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12">
+									<div class="product_item center margbot30">
+										<div class="hover_img">
+											<img src="images/products/6.jpg" alt="" />
+										</div>
+										<div class="item_btn_in center">
+											<a class="btn btn-white" href="javascript:void(0);" alt="">В корзину</a>
+											<a class="btn btn-white" href="product-page.html" alt="">Открыть</a>
+										</div>
+										<div class="project_descr">
+											<h4><a href="product-page.html" alt="">Краб океанский</a></h4>
+											<span class="price">540р</span>
+											<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi archi tecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit.</p>
+											<p>Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+										</div>
+									</div>
+								</div>
+								<div class="element category2 col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12">
+									<div class="product_item center margbot30">
+										<div class="hover_img">
+											<img src="images/products/7.jpg" alt="" />
+										</div>
+										<div class="item_btn_in center">
+											<a class="btn btn-white" href="javascript:void(0);" alt="">В корзину</a>
+											<a class="btn btn-white" href="product-page.html" alt="">Открыть</a>
+										</div>
+										<div class="project_descr">
+											<h4><a href="product-page.html" alt="">Замороженная</a></h4>
+											<span class="price">260р</span>
+											<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi archi tecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit.</p>
+											<p>Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+										</div>
+									</div>
+								</div>
+								<div class="element category3 col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12">
+									<div class="product_item center margbot30">
+										<div class="hover_img">
+											<img src="images/products/8.jpg" alt="" />
+										</div>
+										<div class="item_btn_in center">
+											<a class="btn btn-white" href="javascript:void(0);" alt="">В корзину</a>
+											<a class="btn btn-white" href="product-page.html" alt="">Открыть</a>
+										</div>
+										<div class="project_descr">
+											<h4><a href="product-page.html" alt="">Соленая семга</a></h4>
+											<span class="price">350р</span>
+											<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi archi tecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit.</p>
+											<p>Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+										</div>
+									</div>
+								</div>
+								<div class="element category4 col-lg-4 col-md-4 col-sm-6 col-xs-6 col-ss-12">
+									<div class="product_item center margbot30">
+										<div class="hover_img">
+											<img src="images/products/9.jpg" alt="" />
+										</div>
+										<div class="item_btn_in center">
+											<a class="btn btn-white" href="javascript:void(0);" alt="">В корзину</a>
+											<a class="btn btn-white" href="product-page.html" alt="">Открыть</a>
+										</div>
+										<div class="project_descr">
+											<h4><a href="product-page.html" alt="">Морское чудо</a></h4>
+											<span class="price">600р</span>
+											<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi archi tecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit.</p>
+											<p>Aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- Pagination -->
+							<ul class="pagination">
+								<li><a href="#">&laquo;</a></li>
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">&raquo;</a></li>
+							</ul><!-- //Pagination -->
+							
+						</div><!-- //Shop Products -->
+						
+						<!-- Sidebar -->
+						<div id="sidebar" class="col-lg-3 col-sm-3">
+							 <!-- Search -->
+							<div class="sidepanel widget_search">
+                                <form class="search_form" action="#" method="" name="">
+									<input type="text" name="Search the site..." value="Search the site..." onFocus="if (this.value == 'Search the site...') this.value = '';" onBlur="if (this.value == '') this.value = 'Search the site...';" />
+								</form>
+                            </div><!-- //Search -->
+							
+							<!-- Shop Cart -->
+							<div class="sidepanel widget_shopcart">
+                                <h4>Корзина</h4>
+                                <div id="cart">
+									<ul class="cart-items">
+										<li>
+											<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+											<a href="product-page.html" class="cart-item-title">Камбала</a>
+											<span class="cart-item-amount"><a class="item-remove" href=""></a> 2 x 150р</span>
+										</li>
+										<li>
+											<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+											<a href="product-page.html" class="cart-item-title">Семга</a>
+											<span class="cart-item-amount"><a class="item-remove" href=""></a> 1 x 350р</span>
+										</li>
+									</ul>
+									<span class="cart-subtotal">Subtotal: <strong>500р</strong></span>
+									<div class="right">
+										<a class="btn btn-xs margbot5" href="javascript:void(0);">Посмотреть в корзину</a>
+										<a class="btn btn-xs margbot5" href="javascript:void(0);">Опустошить</a>
+									</div>
+								</div>
+                            </div><!-- //Shop Cart -->
+							
+							
+							
+							<!-- Categories -->
+							
+                            
+							<div class="sidepanel widget_products">
+                                <h4>Чаще всего покупают</h4>
+                                <ul class="popular_products">
+                                    <li>
+                                        <div class="pull-left popular_product_img">
+                                            <img src="images/products/1.jpg" width="70" height="70" alt="" />
+                                        </div>
+                                        <div class="popular_product_descr">
+                                            <a class="title" href="product-page.html">Семга</a>
+                                            Семга (озерный лосось, атлантический лосось) – рыба с торпедообразным телом,
+											<span class="price color_text">200р</span>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </li>
+                                    <li>
+                                        <div class="pull-left popular_product_img">
+                                            <img src="images/products/2.jpg" width="70" height="70" alt="" />
+                                        </div>
+                                        <div class="popular_product_descr">
+                                            <a class="title" href="product-page.html">Камбала</a>
+											Камбала – общее название плоских донных рыб, обитающих преимущественно
+											<span class="price color_text">150р</span>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </li>
+                                </ul>
+                            </div><!-- .sidepanel -->
+							
+						</div><!-- //Sidebar -->
+					</div>
+				</section><!-- //Shop -->
+
+				
+				<!-- FOOTER -->
+				<footer class="full_width footer_block">
+					
+					<!-- ROW -->
+					<div class="row" data-animated="fadeInUp">
+						
+						
+						
+					
+						
+						<div class="respon_clear"></div>
+                        <!-- LATEST NEWS -->
+						<div class="col-lg-3 col-md-3 col-sm-6 padbot20">
+							<img src="images/карта.jpg" width="3000"  alt="" />
+						</div><!-- //LATEST NEWS -->
+						
+						<!-- LATEST NEWS -->
+						<div class="col-lg-3 col-md-3 col-sm-6 padbot20">
+							<h2>Как нас найти</h2>
+							<p>г. Москва, пер. Большой Дровяной, д.5</br>
+                            Часы работы: 10:00 - 22:00</br>
+                            Выходной: воскресенье
+						</div><!-- //LATEST NEWS -->
+						
+						<div class="col-lg-3 col-md-3 col-sm-6 padbot20">
+                            <h2>Связаться с нами:</h2>
+                            </p>
+							
+							<!-- NEWSLETTER-FORM -->
+							<form id="newsletter-form" action="">
+								<input type="text" name="Enter your Email..." value="Введите свой Email..." onFocus="if (this.value == 'Введите свой Email...') this.value = '';" onBlur="if (this.value == '') this.value = 'Введите свой Email...';" />
+								<input class="contact_btn" type="submit" value="" />
+							</form><!-- //NEWSLETTER-FORM -->
+                            
+                        
+							
+							<!-- FOOTER SOCIAL -->
+							<ul class="social">
+								<li class="icon1"><a href="javascript:void(0);" alt=""></a></li>
+								<li class="icon2"><a href="javascript:void(0);" alt=""></a></li>
+								<li class="icon3"><a href="javascript:void(0);" alt=""></a></li>
+								<li class="icon4"><a href="javascript:void(0);" alt=""></a></li>
+								<li class="icon5"><a href="javascript:void(0);" alt=""></a></li>
+								<li class="icon6"><a href="javascript:void(0);" alt=""></a></li>
+							</ul><!-- //FOOTER SOCIALS -->
+						</div>
+					</div><!-- //ROW -->
+					
+					<!-- COPYRIGHT -->
+					<div class="copyright">
+						<a class="copyright_logo" href="javascript:void(0);">Алексей Логунов</a> <span> &copy; Сделано в учебных целях / 2017г.</span>
+					</div><!-- //COPYRIGHT -->
+				</footer><!-- //FOOTER -->
+			</div><!-- //WRAPPER -->
+		</div><!-- //CONTAINER -->
+	</div><!-- //PAGE -->
+</body>
+</html>
